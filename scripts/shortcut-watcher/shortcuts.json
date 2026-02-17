@@ -32,18 +32,44 @@
       ["Cmd+Option+b", "Open bookmark manager"],
       ["Cmd+Shift+b", "Toggle bookmarks bar"]
     ],
-    "Vimium": [
-      ["f / F", "Open link current / new tab"],
+    "Vimium – Navigation": [
       ["j / k", "Scroll down / up"],
+      ["d / u", "Scroll half page down / up"],
       ["gg / G", "Top / bottom of page"],
-      ["J / K", "Tab left / right"],
-      ["x / X", "Close / restore tab"],
-      ["o / O", "Open URL current / new tab"],
-      ["yy", "Copy current URL"],
       ["H / L", "History back / forward"],
-      ["/", "Find mode"],
-      ["T", "Search open tabs"],
+      ["r", "Reload page"],
+      ["gu / gU", "Go up URL path / to root"]
+    ],
+    "Vimium – Links": [
+      ["f", "Open link in current tab"],
+      ["F", "Open link in new tab"],
+      ["yf", "Copy link URL"],
       ["gi", "Focus first text input"],
+      ["[[  / ]]", "Previous / next page (pagination)"]
+    ],
+    "Vimium – Tabs": [
+      ["J / K", "Tab left / right"],
+      ["g0 / g$", "First / last tab"],
+      ["t", "Create new tab"],
+      ["x / X", "Close / restore tab"],
+      ["T", "Search open tabs"],
+      ["^", "Toggle previous tab"],
+      ["W", "Move tab to new window"]
+    ],
+    "Vimium – Search & URL": [
+      ["o / O", "Open URL current / new tab"],
+      ["b / B", "Open bookmark current / new tab"],
+      ["/", "Find mode"],
+      ["n / N", "Next / previous match"],
+      ["yy", "Copy current URL"],
+      ["p / P", "Open clipboard URL current / new tab"]
+    ],
+    "Vimium – Marks & Visual": [
+      ["v / V", "Enter visual / line visual mode"],
+      ["m + key", "Set local mark"],
+      ["` + key", "Jump to local mark"],
+      ["i", "Enter insert mode (pass keys)"],
+      ["gs", "View page source"],
       ["?", "Show all keybindings"]
     ]
   },
