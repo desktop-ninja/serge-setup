@@ -1,0 +1,22 @@
+[user]
+	email = {{ .email }}
+	name = {{ .name }}
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[pull]
+	rebase = true
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager

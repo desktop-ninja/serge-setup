@@ -1,0 +1,140 @@
+{
+  "Google Chrome": {
+    "Tabs": [
+      ["Cmd+t", "New tab"],
+      ["Cmd+w", "Close tab"],
+      ["Cmd+Shift+t", "Reopen closed tab"],
+      ["Ctrl+Tab", "Next tab"],
+      ["Ctrl+Shift+Tab", "Previous tab"],
+      ["Cmd+1-8", "Go to tab by number"],
+      ["Cmd+9", "Go to last tab"]
+    ],
+    "Navigation": [
+      ["Cmd+l", "Focus address bar"],
+      ["Cmd+[ / ]", "Back / forward"],
+      ["Cmd+r", "Reload"],
+      ["Cmd+Shift+r", "Hard reload (bypass cache)"],
+      ["Space / Shift+Space", "Scroll down / up"]
+    ],
+    "Find": [
+      ["Cmd+f", "Find on page"],
+      ["Cmd+g", "Next match"],
+      ["Cmd+Shift+g", "Previous match"]
+    ],
+    "DevTools": [
+      ["Cmd+Option+i", "Open DevTools"],
+      ["Cmd+Option+j", "Open DevTools console"],
+      ["Cmd+Option+u", "View source"]
+    ],
+    "Bookmarks": [
+      ["Cmd+d", "Bookmark current page"],
+      ["Cmd+Shift+d", "Bookmark all open tabs"],
+      ["Cmd+Option+b", "Open bookmark manager"],
+      ["Cmd+Shift+b", "Toggle bookmarks bar"]
+    ],
+    "Vimium": [
+      ["f / F", "Open link current / new tab"],
+      ["j / k", "Scroll down / up"],
+      ["gg / G", "Top / bottom of page"],
+      ["J / K", "Tab left / right"],
+      ["x / X", "Close / restore tab"],
+      ["o / O", "Open URL current / new tab"],
+      ["yy", "Copy current URL"],
+      ["H / L", "History back / forward"],
+      ["/", "Find mode"],
+      ["T", "Search open tabs"],
+      ["gi", "Focus first text input"],
+      ["?", "Show all keybindings"]
+    ]
+  },
+  "kitty": {
+    "Tabs": [
+      ["Cmd+t", "New tab"],
+      ["Cmd+w", "Close tab"],
+      ["Cmd+Shift+] / [", "Next / previous tab"],
+      ["Cmd+1-9", "Go to tab by number"],
+      ["Cmd+Shift+i", "Set tab title"]
+    ],
+    "Windows (Splits)": [
+      ["Cmd+Enter", "New window (split)"],
+      ["Cmd+Shift+d", "Close window"],
+      ["Cmd+] / [", "Next / previous window"],
+      ["Cmd+Shift+Enter", "New OS window"]
+    ],
+    "Scrolling": [
+      ["Cmd+Up / Down", "Scroll line up / down"],
+      ["Cmd+PageUp / PageDown", "Scroll page up / down"],
+      ["Cmd+Home / End", "Scroll to top / bottom"],
+      ["Cmd+Shift+h", "Browse scrollback in pager"]
+    ],
+    "Font Size": [
+      ["Cmd+=", "Increase font size"],
+      ["Cmd+-", "Decrease font size"],
+      ["Cmd+0", "Reset font size"]
+    ],
+    "Misc": [
+      ["Cmd+,", "Edit config file"],
+      ["Cmd+Shift+,", "Reload config"],
+      ["Cmd+c", "Copy to clipboard"],
+      ["Cmd+v", "Paste from clipboard"],
+      ["Cmd+Shift+e", "Open URL hints"],
+      ["Cmd+Ctrl+f", "Toggle fullscreen"]
+    ],
+    "fzf": [
+      ["Cmd+R", "Search command history"],
+      ["Cmd+F", "Search files"],
+      ["Cmd+E", "cd into directory"]
+    ],
+    "tmux": [
+      ["Ctrl+b c", "Create new window"],
+      ["Ctrl+b ,", "Rename window"],
+      ["Ctrl+b n / p", "Next / previous window"],
+      ["Ctrl+b %", "Split vertically"],
+      ["Ctrl+b \"", "Split horizontally"],
+      ["Ctrl+b x", "Close pane"],
+      ["Ctrl+b z", "Toggle pane zoom"],
+      ["Ctrl+b [", "Enter copy mode"],
+      ["Ctrl+b d", "Detach from session"],
+      ["Ctrl+b s", "List / switch sessions"],
+      ["Ctrl+b w", "List windows"]
+    ]
+  },
+  "Finder": {
+    "Files": [
+      ["Cmd+Shift+g", "Go to folder"],
+      ["Cmd+Shift+.", "Toggle hidden files"],
+      ["Cmd+Delete", "Move to trash"],
+      ["Cmd+Shift+Delete", "Empty trash"],
+      ["Cmd+i", "Get info"],
+      ["Cmd+d", "Duplicate"],
+      ["Space", "Quick Look"],
+      ["Cmd+Option+v", "Move (cut + paste)"]
+    ],
+    "Window Management": [
+      ["Cmd+m", "Minimize window"],
+      ["Cmd+h", "Hide app"],
+      ["Cmd+Option+h", "Hide all other apps"],
+      ["Cmd+q", "Quit app"],
+      ["Cmd+w", "Close window"],
+      ["Cmd+Ctrl+f", "Toggle fullscreen"],
+      ["Cmd+Tab", "Switch apps"],
+      ["Cmd+`", "Switch windows of same app"]
+    ],
+    "Spaces & Mission Control": [
+      ["Ctrl+Up", "Mission Control"],
+      ["Ctrl+Down", "App windows"],
+      ["Ctrl+Left / Right", "Switch space/desktop"],
+      ["F11", "Show desktop"]
+    ],
+    "Screenshots": [
+      ["Cmd+Shift+3", "Screenshot full screen"],
+      ["Cmd+Shift+4", "Screenshot selection"],
+      ["Cmd+Shift+4+Space", "Screenshot window"],
+      ["Cmd+Shift+5", "Screenshot/record toolbar"]
+    ],
+    "Spotlight / Search": [
+      ["Cmd+Space", "Spotlight search"],
+      ["Cmd+f", "Find in app"]
+    ]
+  }
+}

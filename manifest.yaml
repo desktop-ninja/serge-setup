@@ -1,0 +1,50 @@
+name: "Serge's Desktop Ninja Setup"
+author: serge-ivo
+os: [macos]
+description: "Keyboard-first macOS setup: kitty + tmux + fzf + Hammerspoon"
+tags: [macos, kitty, tmux, fzf, hammerspoon, keyboard-first]
+
+modules:
+  - id: kitty
+    name: Kitty Terminal
+    description: "Tmux-aware keybindings, Cmd→Ctrl remaps for seamless tmux/nvim navigation"
+    path: dot_config/kitty
+    tags: [terminal]
+
+  - id: tmux
+    name: Tmux
+    description: "Vi-mode, dracula theme, vim-tmux-navigator, session auto-restore"
+    path: dot_tmux.conf
+    tags: [multiplexer]
+    dependencies: [kitty]
+
+  - id: zsh
+    name: Zsh Shell
+    description: "NVM, fzf integration, conda, GCloud SDK"
+    path: dot_zshrc.tmpl
+    tags: [shell]
+
+  - id: git
+    name: Git
+    description: "Rebase on pull, LFS, GitHub credential helper"
+    path: dot_gitconfig.tmpl
+    tags: [git]
+
+  - id: hammerspoon
+    name: Hammerspoon
+    description: "Window snapping (Cmd+Ctrl+arrows), multi-monitor layout save/restore"
+    path: dot_hammerspoon
+    tags: [window-management]
+
+  - id: shortcut-watcher
+    name: Shortcut Watcher
+    description: "Live CLI shortcut display for frontmost macOS app"
+    path: scripts/shortcut-watcher
+    tags: [productivity, cli]
+
+install:
+  prerequisites:
+    - "brew install chezmoi"
+    - "brew install --cask kitty hammerspoon"
+    - "brew install tmux fzf git"
+  quick: "chezmoi init --apply desktop-ninja/serge-setup"
