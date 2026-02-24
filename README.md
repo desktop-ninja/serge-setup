@@ -84,3 +84,11 @@ scripts/shortcut-watcher/   # live shortcut display CLI
 ## Tags
 
 `macos` `kitty` `tmux` `fzf` `hammerspoon` `keyboard-first`
+
+## Tmux Project Session Standard
+
+For any project session under `~/dev/*/platform`, the standard setup is:
+- 3 windows named `claude`, `web`, `gha`
+- Each window is split horizontally into two panes
+- Commands run in the left pane: `claude --dangerously-skip-permissions` for `claude`, `cd web && npm run dev` for `web`, `watchgha` for `gha`
+- `watchgha` is wrapped by a guard that re-runs it every 5 seconds while the session has been active within the last hour
